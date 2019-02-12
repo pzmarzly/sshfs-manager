@@ -1,0 +1,12 @@
+[package]
+name = "sshfs"
+version = "0.1.0"
+authors = ["Paweł Zmarzły <pawo2500@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+sha2 = "0.8"
+
+[dependencies.command-macros]
+version = "0.2.6"
+features = ["nightly"]
