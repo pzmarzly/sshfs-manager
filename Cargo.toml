@@ -8,5 +8,5 @@ edition = "2018"
 sha2 = "0.8"
 
 [dependencies.command-macros]
-version = "0.2.6"
+version = "0.2.7"
 features = ["nightly"]

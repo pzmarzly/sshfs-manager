@@ -8,10 +8,6 @@ fn main() {
     let success =
         |mut cmd: std::process::Command| cmd.stdout(Stdio::null()).status().unwrap().success();
 
-    if !success(command!(grep "^user_allow_other" "/etc/fuse.conf")) {
-        eprintln!("WARNING: no user_allow_other in /etc/fuse.conf");
-    }
-
     // sudo causes ~/ to become /root/
     let home_dir = std::env::var("HOME").unwrap();
 
